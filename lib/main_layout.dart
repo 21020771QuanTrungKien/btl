@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:healthcare_app/screens/appointment_page.dart';
-import 'package:healthcare_app/screens/changepass_page.dart';
 import 'package:healthcare_app/screens/chatting_page.dart';
 import 'package:healthcare_app/screens/fav_page.dart';
 import 'package:healthcare_app/screens/home_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:healthcare_app/screens/medicalrecord_page.dart';
 import 'package:healthcare_app/screens/profile_page.dart';
-import 'package:healthcare_app/screens/success_booked.dart';
 
 class MainLayout extends StatefulWidget {
   const MainLayout({Key? key}) : super(key: key);
@@ -34,11 +31,9 @@ class _MainLayoutState extends State<MainLayout> {
         children: <Widget>[
           const HomePage(),
           const AppointmentPage(),
-          ChatPage(),
+          const ChatPage(),
           FavPage(),
           ProfilePage(),
-          ChangePasswordPage(),
-          MedicalRecordScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
